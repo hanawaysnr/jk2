@@ -1,33 +1,17 @@
 <!DOCTYPE html>
-<html lang="jp">
-<head>
-	<meta charset="UTF-8">
-	<title>Title of homepage</title>
-	<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-	
-<!------- ハンバーガーメニュー ------>
+<html>
+ <head>
+   <meta charset="utf-8">
+   <link rel='stylesheet' href="css/style.css" type='text/css'>
+   <title>お店のマップ</title>
+ </head>
+ <body>
+   <p>出てきたお店</p>
+   <div id="map" style="width:1200px;height:700px"></div>
+   <script src="js/script.js"></script>
+   <script src="https://maps.googleapis.com/maps/api/js?callback=initMap">
+   </script>
 
-        <a class="menu-trigger hamicon" href="#">
-          <span></span>
-          <span></span>
-          <span></span>
-        </a>
 
-	<!-------ハンバーガーアイコン中身  ------>
-
-        <nav class="header-navigation">
-          <ul class="header-navigation-list">
-            <li class="header-navigation-list-item"><a href="index.html">Top</a></li>
-            <li class="header-navigation-list-item"><a href="place.html">地図</a></li>
-            <li class="header-navigation-list-item"><a href="if.html">if文</a></li>
-            <li class="header-navigation-list-item"><a href="for.html">繰り返し</a></li>
-          </ul>
-        </nav>
-
-<!-- ライブラリの読み込み -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script src="js/script.js"></script>
-</body>
+ </body>
 </html>
