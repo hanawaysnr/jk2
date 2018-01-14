@@ -67,7 +67,7 @@
 }
 
 /*ハンバーガーメニュー中身*/
-.header-navigation {  
+.header-navigation {
     float: none;
     position: fixed;
     top: 0;
@@ -90,5 +90,33 @@
   color: #333;
 }
 
+#card {
+  margin: 20px;
+  width: 100%;
+  height: 200px;
+  list-style: none;
+}
+#card li {
+  margin: 10px;
+  width: 150px;
+  height: 200px;
+  float: left;
+  position: relative;
+}
+#card li img {
+  position: absolute;
+}
+#card li.off, #card li.lock {
+  pointer-events : none;
+}
 
-
+/* 終了時 */
+.finish {
+    opacity: 0;
+    cursor: default;
+}
+/* 経過秒数 */
+#result {
+    font-size: 1.2em;
+    font-weight: bold;
+}
